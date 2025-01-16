@@ -376,7 +376,7 @@ function Core(props: Props) {
         ) {
           const { apps } = error.details as MultipleAppsInTarballErrorDetails;
           const selectedAppNameIndex = await MenuBarModule.showMultiOptionAlert(
-            'Multiple apps where detected in the tarball',
+            'Multiple apps were detected in the tarball',
             'Select which app to run:',
             apps.map((app) => app.name)
           );
